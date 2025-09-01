@@ -1,0 +1,437 @@
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --color-black: #000308;
+  --color-purple: #A461DE;
+  --color-gray-light: #f9f7fc;
+  --color-gray: #eae7f2;
+  --color-white: #ffffff;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+}
+
+header .navbar{
+  background-color: #FDF7F0;
+}
+
+header .navbar .btn-primary{
+    background-color: #A461DE;
+}
+header .navbar .btn-primary:hover{
+    background-color: #7828be;
+}
+
+.container-fluid{
+  width: 100%;
+  max-width: 85.375rem;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5 !important;
+  color: #262626;
+  line-height: 1.6;
+  font-weight: 200;
+}
+
+.hero{
+  background-color: #FDF7F0;
+  padding-top: 2.5rem;
+  padding-bottom: 3.75rem;
+}
+
+.contenedor {
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 85.375rem;
+  margin: 0 auto;
+  padding: 0 .625rem 0 .625rem;
+}
+
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; margin-bottom: var(--spacing-sm); }
+h3 { font-size: 1.4rem; margin-bottom: var(--spacing-xs); }
+h4 { font-size: 1.2rem; margin-bottom: var(--spacing-xs); }
+
+p {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* ---------------------------------- */
+/* CABECERA */
+/* ---------------------------------- */
+
+.hero .hero-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 3.75rem;
+}
+
+.text h1{
+  font-size: 3.875rem;
+  font-weight: 600;
+}
+
+.text h1 .highlight{
+  color: #A461DE;
+}
+
+.text p{
+  font-size: 1.625rem;
+  font-weight: 100;
+}
+
+.text .buttons{
+  display: flex;
+  grid-gap: 20px;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn-primary{
+  background-color: #A461DE;
+  padding: 1rem 1.25rem;
+  color: #ffffff;
+  border-radius: .5rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-primary:hover{
+  background-color: #7828be;
+}
+
+.btn-white{
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 1rem 1.25rem;
+  color: #A461DE;
+  border-radius: .5rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-secondary{
+  padding: 1rem 1.25rem;
+  color: #262626;
+  border: 1px solid #262626;
+  border-radius: .5rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-listen{
+  background-color: #262626;
+  padding: 1rem 1.25rem;
+  color: #ffffff;
+  border-radius: .5rem;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+.btn-listen:hover{
+  background-color: #000000;
+}
+
+.text .stats{
+  display: flex;
+  grid-gap: 40px;
+  justify-content: flex-start;
+}
+
+.text .stats .stats-info{
+  text-align: center;
+}
+.text .stats .stats-info h4{
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+.text .stats .stats-info span{
+  font-size: 1rem;
+}
+
+/* ---------------------------------- */
+/* BARRA LOGOS PLATAFORMAS STREAMING */
+/* ---------------------------------- */
+
+.logos-bar{
+  background-color: #A461DE;
+}
+.logos-bar .contenedor{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 0px;
+}
+.logos-bar img{
+  width: auto;
+  height: 30px;
+}
+
+/* ---------------------------------- */
+/* SECCIÓN SERVICIOS */
+/* ---------------------------------- */
+
+.services{
+  background-color: #f5f5f5;
+}
+.info-title-container{
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.info-title-container h2{
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.info-title-container p{
+  font-size: 1.375rem;
+  font-weight: 200;
+}
+.services .service-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr;
+  grid-gap: 1.875rem;
+  justify-content: space-between;
+}
+.services .service-grid .service-card{
+  display: grid;
+  grid-template-rows: 3fr;
+  grid-gap: .625rem;
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.875rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.009);
+}
+.services .buttons{
+  text-align: center;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+}
+
+/* ---------------------------------- */
+/* SECCIÓN PROCESO */
+/* ---------------------------------- */
+
+.process{
+  margin-bottom: 4.375rem;
+}
+.process .contenedor .process-content{
+  display: flex;
+  align-items: center;
+  grid-gap: 3.75rem;
+}
+.process .steps .step{
+  display: flex;
+  grid-gap: 1.25rem;
+  border: 1px solid #262626;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.process .steps .step img{
+  width: 59px;
+  height: 59px;
+}
+
+
+/* ---------------------------------- */
+/* SECCIÓN NUESTROS PODCASTS */
+/* ---------------------------------- */
+
+.success-stories{
+  background-color: #FDF7F0;
+}
+.success-stories .tags{
+  display: flex;
+  justify-content: center;
+  grid-gap: .9375rem;
+  margin-top: -1.25rem;
+  margin-bottom: 2.5rem;
+}
+.success-stories .tags button{
+  background-color: transparent;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  padding: 5px 12px;
+}
+.success-stories .tags button:hover{
+  background-color: #A461DE;
+  border: 1px solid #A461DE;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 5px 12px;
+}
+.success-stories .contenedor .podcast-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1.25rem;
+}
+.success-stories .podcast-grid .podcast-card{
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  overflow: hidden;
+  text-align: center;
+}
+.success-stories .podcast-grid .podcast-card .cover img{
+  border-radius: .625rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  margin-bottom: .9375rem;
+}
+.success-stories .podcast-grid .podcast-card .btn-listen{
+  display: block;
+  margin-top: 1.25rem;
+}
+.success-stories .buttons{
+  text-align: center;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+}
+
+
+/* ---------------------------------- */
+/* PÁGINA: NUESTROS PLANES */
+/* ---------------------------------- */
+
+.plans .plans-grid{
+  display: flex;
+  grid-gap: 1.25rem;
+}
+.plans .plans-grid .plan-card{
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.009);
+}
+.plans .plans-grid .plan-basic .btn-secondary{
+  display: block;
+  margin: 1.25rem 0;
+}
+.plans .plans-grid .plan-premium .btn-secondary{
+  display: block;
+  margin: 1.25rem 0;
+}
+.plans .plans-grid .plan-basic h3{
+  color: #A461DE;
+}
+.plans .plans-grid .plan-premium h3{
+  color: #A461DE;
+}
+.plans .plans-grid .plan-mid{
+  background-color: #A461DE;
+  color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.009);
+}
+.plans .plans-grid .plan-mid .btn-white{
+  display: block;
+  margin: 1.25rem 0;
+}
+.plans .plans-grid .price{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.plans .plans-grid .price span{
+  font-size: 1rem;
+  font-weight: 100;
+}
+.plans .plans-grid .note{
+  display: block;
+  font-weight: 100;
+  padding-top: 1.25rem;
+}
+.help-cta{
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+}
+.help-cta h3{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.help-cta p{
+  font-size: 1.375rem;
+  font-weight: 200;
+}
+.help-cta .space{
+  display: block;
+  height: 20px;
+}
+
+/* ---------------------------------- */
+/* FOOTER */
+/* ---------------------------------- */
+
+footer {
+  background-color: #262626;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 200;
+  padding-top: 2.5rem;
+}
+footer a{
+  color: #ffffff;
+  text-decoration: none;
+}
+footer .contenedor{
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+footer .contenedor .footer-col ul{
+  padding-left: 0px;
+}
+footer .contenedor .footer-col ul li{
+  list-style: none;
+}
+.footer-bottom {
+  width: 100%;
+  max-width: 85.375rem;
+  margin: 0 auto;
+  padding: 0 .625rem 0 .625rem;
+  border-top: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 0 1.25rem 0;
+}
+.footer-bottom a{
+  padding: 0 10px 0 0;
+  color: #ffffff;
+  text-decoration: none;
+}
