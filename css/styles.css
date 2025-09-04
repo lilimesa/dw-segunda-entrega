@@ -1,11 +1,4 @@
 :root {
-  --font-primary: "Poppins", sans-serif;
-  --color-black: #000308;
-  --color-purple: #A461DE;
-  --color-gray-light: #f9f7fc;
-  --color-gray: #eae7f2;
-  --color-white: #ffffff;
-
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
@@ -30,6 +23,7 @@ header .navbar{
 
 header .navbar .btn-primary{
     background-color: #A461DE;
+    border: none;
 }
 header .navbar .btn-primary:hover{
     background-color: #7828be;
@@ -60,7 +54,7 @@ body {
   width: 100%;
   max-width: 85.375rem;
   margin: 0 auto;
-  padding: 0 .625rem 0 .625rem;
+  padding: 10px 24px;
 }
 
 .section {
@@ -179,6 +173,7 @@ p {
   font-size: 1rem;
 }
 
+
 /* ---------------------------------- */
 /* BARRA LOGOS PLATAFORMAS STREAMING */
 /* ---------------------------------- */
@@ -189,7 +184,8 @@ p {
 .logos-bar .contenedor{
   display: flex;
   justify-content: space-between;
-  padding: 1.25rem 0px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .logos-bar img{
   width: auto;
@@ -243,7 +239,8 @@ p {
 /* ---------------------------------- */
 
 .process{
-  margin-bottom: 4.375rem;
+  background-color: #ffffff;
+  padding-bottom: 4.375rem;
 }
 .process .contenedor .process-content{
   display: flex;
@@ -394,6 +391,165 @@ p {
 }
 
 /* ---------------------------------- */
+/* SECCIÓN NUESTROS PODCASTS */
+/* ---------------------------------- */
+
+.success-stories{
+  background-color: #FDF7F0;
+}
+.success-stories .tags{
+  display: flex;
+  justify-content: center;
+  grid-gap: .9375rem;
+  margin-top: -1.25rem;
+  margin-bottom: 2.5rem;
+}
+.success-stories .tags button{
+  background-color: transparent;
+  border: 1px solid #262626;
+  border-radius: 10px;
+  padding: 5px 12px;
+}
+.success-stories .tags button:hover{
+  background-color: #A461DE;
+  border: 1px solid #A461DE;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 5px 12px;
+}
+.success-stories .contenedor .podcast-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1.25rem;
+}
+.success-stories .podcast-grid .podcast-card{
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  overflow: hidden;
+  text-align: center;
+}
+.success-stories .podcast-grid .podcast-card .cover img{
+  border-radius: .625rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  margin-bottom: .9375rem;
+}
+.success-stories .podcast-grid .podcast-card .btn-listen{
+  display: block;
+  margin-top: 1.25rem;
+}
+.success-stories .buttons{
+  text-align: center;
+  padding-top: 4.375rem;
+  padding-bottom: 4.375rem;
+}
+
+/* ---------------------------------- */
+/* PÁGINA: NUESTROS PODCASTS */
+/* ---------------------------------- */
+
+.podcasts-categories{
+  background-color: #f5f5f5;
+  padding-top: 3.75rem
+}
+
+.podcasts-categories a{
+  text-decoration: none;
+}
+
+.podcasts-categories .contenedor{
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 10px;
+}
+
+.star-category{
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.star-category .texts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  border-radius: 20px;
+  height: 100%;
+  color: #ffffff;
+  background: #000000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+.podcasts-categories .category-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.category-card{
+  border-radius: 1.25rem;
+  min-height: 200px;
+  font-weight: 600;
+  background-size: cover;
+  background-position: center center;
+}
+
+.category-card .texts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  border-radius: 20px;
+  height: 100%;
+  color: #ffffff;
+  background: #000000;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+.texts span{
+  font-size: .9375rem;
+  font-weight: 200;
+}
+
+.podcasts-row .contenedor .podcast-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 1.25rem;
+}
+.podcasts-row .podcast-grid .podcast-card{
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  overflow: hidden;
+  text-align: center;
+}
+.podcasts-row .podcast-grid .podcast-card .cover img{
+  border-radius: .625rem;
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+  margin-bottom: .9375rem;
+}
+.podcasts-row .podcast-grid .podcast-card .btn-listen{
+  display: block;
+  margin-top: 1.25rem;
+}
+
+.info-title-category{
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+}
+
+/* ---------------------------------- */
 /* FOOTER */
 /* ---------------------------------- */
 
@@ -434,4 +590,189 @@ footer .contenedor .footer-col ul li{
   padding: 0 10px 0 0;
   color: #ffffff;
   text-decoration: none;
+}
+
+
+
+
+
+/* ≤ 768px: tablet vertical / phablet */
+@media (max-width: 768px) {
+
+  /* ---------------------------------- */
+  /* CABECERA */
+  /* ---------------------------------- */
+
+  .hero .hero-content{
+    display: block;
+  }
+  .text .stats{
+    display: flex;
+    grid-gap: 40px;
+    justify-content: flex-start;
+    margin-bottom: 2.5rem;
+  }
+  .text .stats .stats-info h4{
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
+  .text .stats .stats-info span{
+    font-size: 1rem;
+  }
+  .hero .img-header img{
+    width: 100%;
+  }
+
+  /* ---------------------------------- */
+  /* SECCIÓN PROCESO */
+  /* ---------------------------------- */
+
+  .process{
+    background-color: #ffffff;
+    padding-bottom: 2.5rem;
+  }
+
+  .process .contenedor .process-content{
+    display: block;
+  }
+  .process .image-placeholder{
+    text-align: center;
+  }
+  .process .steps{
+    margin-top: 2.5rem;
+  }
+
+  /* ---------------------------------- */
+  /* SECCIÓN NUESTROS PODCASTS */
+  /* ---------------------------------- */
+
+  .success-stories .tags{
+    display: flex;
+    justify-content: center;
+    grid-gap: .9375rem;
+    margin-top: -1.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .success-stories .contenedor .podcast-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1.25rem;
+  }
+
+}
+
+
+
+
+/* ≤ 576px: móvil */
+@media (max-width: 576px) {
+
+  /* ---------------------------------- */
+  /* CABECERA */
+  /* ---------------------------------- */
+
+  .text h1{
+    font-size: 2.875rem;
+    font-weight: 600;
+  }
+  .text p{
+    font-size: 1.4375rem;
+    font-weight: 100;
+  }
+  .text .stats .stats-info h4{
+    font-size: 1.5625rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text .stats .stats-info span{
+    font-size: .875rem;
+  }
+
+  /* ---------------------------------- */
+  /* BARRA LOGOS PLATAFORMAS STREAMING */
+  /* ---------------------------------- */
+
+  .logos-bar{
+    background-color: #A461DE;
+  }
+  .logos-bar .contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .logos-bar img{
+    width: auto;
+    height: 15px;
+  }
+
+  /* ---------------------------------- */
+  /* SECCIÓN SERVICIOS */
+  /* ---------------------------------- */
+
+  .info-title-container{
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .info-title-container h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  .info-title-container p{
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+  .services .service-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1.875rem;
+    justify-content: space-between;
+  }
+  .services .service-grid .service-card{
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-gap: .625rem;
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    padding: 1.875rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.009);
+  }
+  .services .buttons{
+    text-align: center;
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+  }
+
+
+  /* ---------------------------------- */
+  /* SECCIÓN PROCESO */
+  /* ---------------------------------- */
+
+  .process .image-placeholder img{
+    width: 100%;
+    position: relative;
+  }
+
+
+  /* ---------------------------------- */
+  /* SECCIÓN NUESTROS PODCASTS */
+  /* ---------------------------------- */
+
+  .success-stories .tags{
+    display: flex;
+    justify-content: center;
+    grid-gap: .9375rem;
+    margin-top: -1.25rem;
+    margin-bottom: 2.5rem;
+  }
+  .success-stories .contenedor .podcast-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
 }

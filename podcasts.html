@@ -3,147 +3,217 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Podcasts | VozLab</title>
+  <title>VozLab - Dale voz a tu historia</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <div class="container">
-      <a href="index.html" class="logo"><img src="img/logo-vozlab.png" alt=""></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="podcasts.html">Podcasts</a></li>
-          <li><a href="nuestros-planes.html">Nuestros planes</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="btn-header">Agenda aquí tu asesoría</a>
-    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">VozLab</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 align-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="podcasts.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Podcasts
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">True crime</a></li>
+                <li><a class="dropdown-item" href="#">Historia</a></li>
+                <li><a class="dropdown-item" href="#">Entrevistas</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nuestros-planes.html">Nuestros Planes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-primary">Agenda aquí tu asesoría</button>
+        </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- Categorías -->
-  <section class="categories">
-    <div class="container category-grid">
-      <div class="category-card">
-        <div class="category-image"></div>
-        <span>25 podcasts</span>
-        <h3>Crímenes y misterios</h3>
+  <!-- Grilla categorías podcasts -->
+  <section class="podcasts-categories">
+    <div class="contenedor">
+
+      <a class="star-category" href="#" style="background-image: url(img/leyendas-legendarias.jpg);">
+        <div class="texts">
+          <span>12 podcasts</span>
+          <h3>True crime</h3>
+        </div>
+      </a>
+      
+      <div class="category-grid">
+       
+        <a class="category-card" href="#" style="background-image: url(img/bestias.png);">
+          <div class="texts">
+            <span>12 podcasts</span>
+            <h3>True crime</h3>
+          </div>
+        </a>
+
+        <a class="category-card" href="#" style="background-image: url(img/bestias.png);">
+          <div class="texts">
+            <span>12 podcasts</span>
+            <h3>True crime</h3>
+          </div>
+        </a>
+
+        <a class="category-card" href="#" style="background-image: url(img/bestias.png);">
+          <div class="texts">
+            <span>12 podcasts</span>
+            <h3>True crime</h3>
+          </div>
+        </a>
+
+        <a class="category-card" href="#" style="background-image: url(img/bestias.png);">
+          <div class="texts">
+            <span>12 podcasts</span>
+            <h3>True crime</h3>
+          </div>
+        </a>
+
       </div>
-      <div class="category-card">
-        <div class="category-image"></div>
-        <span>12 podcasts</span>
-        <h3>Historia</h3>
-      </div>
-      <div class="category-card">
-        <div class="category-image"></div>
-        <span>10 podcasts</span>
-        <h3>Ciencia</h3>
-      </div>
-      <div class="category-card">
-        <div class="category-image"></div>
-        <span>12 podcasts</span>
-        <h3>Salud Mental</h3>
-      </div>
+      
     </div>
   </section>
 
-  <!-- Sección: Nuevos lanzamientos -->
-  <section class="section">
-    <div class="container">
-      <h2>Nuevos lanzamientos</h2>
+  <!-- Fila de podcasts -->
+  <section class="podcasts-row">
+    <div class="contenedor">
+      
+      <!-- Título y descripción -->
+      <div class="info-title-category">
+        <h2>Nuevos lanzamientos</h2>
+      </div>
       <div class="podcast-grid">
-        <!-- Repetir para cada podcast -->
+        <!-- Podcast 1 -->
         <div class="podcast-card">
-          <div class="podcast-cover"></div>
-          <h4>El olimpo de las diosas</h4>
-          <p>Dos mujeres encarnan diosas para hablar de poder, feminidad y mitología moderna. Un podcast irreverente y audaz.</p>
+          <div class="cover"><img src="img/leyendas-legendarias.jpg" alt=""></div>
+          <h4>Leyendas Legendarias</h4>
+          <p>Un podcast de comedia donde cada semana exploramos casos de crimen real y paranormales y eventos históricos peculiares y fantásticos.</p>
           <a href="#" class="btn-listen">▶ Escuchar</a>
         </div>
+        <!-- Podcast 2 -->
         <div class="podcast-card">
-          <div class="podcast-cover"></div>
+          <div class="cover"><img src="img/bestias.png" alt=""></div>
           <h4>Bestias</h4>
-          <p>Crímenes reales analizados con rigor y tensión por la criminóloga Beatriz de Vicente.</p>
+          <p>Crímenes reales analizados con rigor y tensión por la criminóloga Beatriz de Vicente. Psicología, narrativa y misterio en cada episodio.</p>
           <a href="#" class="btn-listen">▶ Escuchar</a>
         </div>
+        <!-- Podcast 3 -->
         <div class="podcast-card">
-          <div class="podcast-cover"></div>
+          <div class="cover"><img src="img/diana-uribe-fm.jpeg" alt=""></div>
           <h4>Diana Uribe FM</h4>
-          <p>Historia narrada con pasión por una de las voces más icónicas de Colombia.</p>
+          <p>Historia del mundo narrada con pasión por una de las voces más icónicas de Colombia. Contexto, emoción y conocimiento profundo.</p>
           <a href="#" class="btn-listen">▶ Escuchar</a>
         </div>
+        <!-- Podcast 4 -->
         <div class="podcast-card">
-          <div class="podcast-cover"></div>
+          <div class="cover"><img src="img/la-historia-de-las-cosas.jpeg" alt=""></div>
           <h4>La historia de las cosas</h4>
-          <p>Explora el origen de los objetos cotidianos. Un podcast curioso y lleno de sorpresas históricas.</p>
+          <p>Explora el origen de los objetos que usamos a diario. Un podcast curioso, didáctico y lleno de sorpresas históricas.</p>
           <a href="#" class="btn-listen">▶ Escuchar</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Sección: Top podcasts -->
-  <section class="section">
-    <div class="container">
-      <h2>Top podcasts</h2>
-      <div class="podcast-grid">
-        <!-- Reutilizar la estructura de podcast-card -->
-        <!-- ... -->
+      <!-- Título y descripción -->
+      <div class="info-title-category">
+        <h2>Top podcasts</h2>
       </div>
-    </div>
-  </section>
-
-  <!-- Sección: True Crime -->
-  <section class="section">
-    <div class="container">
-      <h2>True crime</h2>
       <div class="podcast-grid">
-        <!-- Reutilizar la estructura de podcast-card -->
-        <!-- ... -->
+        <!-- Podcast 1 -->
+        <div class="podcast-card">
+          <div class="cover"><img src="img/leyendas-legendarias.jpg" alt=""></div>
+          <h4>Leyendas Legendarias</h4>
+          <p>Un podcast de comedia donde cada semana exploramos casos de crimen real y paranormales y eventos históricos peculiares y fantásticos.</p>
+          <a href="#" class="btn-listen">▶ Escuchar</a>
+        </div>
+        <!-- Podcast 2 -->
+        <div class="podcast-card">
+          <div class="cover"><img src="img/bestias.png" alt=""></div>
+          <h4>Bestias</h4>
+          <p>Crímenes reales analizados con rigor y tensión por la criminóloga Beatriz de Vicente. Psicología, narrativa y misterio en cada episodio.</p>
+          <a href="#" class="btn-listen">▶ Escuchar</a>
+        </div>
+        <!-- Podcast 3 -->
+        <div class="podcast-card">
+          <div class="cover"><img src="img/diana-uribe-fm.jpeg" alt=""></div>
+          <h4>Diana Uribe FM</h4>
+          <p>Historia del mundo narrada con pasión por una de las voces más icónicas de Colombia. Contexto, emoción y conocimiento profundo.</p>
+          <a href="#" class="btn-listen">▶ Escuchar</a>
+        </div>
+        <!-- Podcast 4 -->
+        <div class="podcast-card">
+          <div class="cover"><img src="img/la-historia-de-las-cosas.jpeg" alt=""></div>
+          <h4>La historia de las cosas</h4>
+          <p>Explora el origen de los objetos que usamos a diario. Un podcast curioso, didáctico y lleno de sorpresas históricas.</p>
+          <a href="#" class="btn-listen">▶ Escuchar</a>
+        </div>
       </div>
+      
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
+    <div class="contenedor">
       <div class="footer-col">
-        <h4>VozLab</h4>
+        <h5>VozLab</h5>
         <p>Convertimos ideas en podcasts memorables que conquistan oídos y corazones.</p>
       </div>
       <div class="footer-col">
-        <h4>Servicios</h4>
+        <h5>Servicios</h5>
         <ul>
-          <li>Producción integral</li>
-          <li>Diseño sonoro</li>
-          <li>Distribución</li>
-          <li>Asesoría</li>
+          <li><a href="#">Producción integral</a></li>
+          <li><a href="#">Diseño sonoro</a></li>
+          <li><a href="#">Distribución</a></li>
+          <li><a href="#">Asesoría</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Empresa</h4>
+        <h5>Empresa</h5>
         <ul>
-          <li>Sobre nosotras</li>
-          <li>Casos de éxito</li>
-          <li>Contacto</li>
+          <li><a href="#">Sobre nosotras</a></li>
+          <li><a href="#">Casos de éxito</a></li>
+          <li><a href="#">Contacto</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Contacto</h4>
+        <h5>Contacto</h5>
         <ul>
-          <li>+34 930 123 456</li>
-          <li>hola@vozlab.com</li>
-          <li>Bogotá, Colombia</li>
+          <li><a href="tel=+34 930 123 456">+34 930 123 456</a></li>
+          <li><a href="mailto=hola@vozlab.com">hola@vozlab.com</a></li>
+          <li><a href="#">Bogotá, Colombia</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 VozLab. Todos los derechos reservados.</p>
-      <a href="#">Política de privacidad</a>
-      <a href="#">Términos de uso</a>
+      <div><p>© 2025 VozLab. Todos los derechos reservados.</p></div>
+      <div>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos de uso</a>
+      </div>
     </div>
   </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
